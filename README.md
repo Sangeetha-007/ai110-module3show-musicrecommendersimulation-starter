@@ -43,6 +43,25 @@ Numeric-First (best for precision)
       "genre":        0.10,   # soft filter
   }
 
+.sort() vs sorted()
+.sort()	sorted()
+Operates on	The list in-place	Returns a new list
+Original list	Mutated	Unchanged
+Returns	None	A new sorted list
+Works on	Lists only	Any iterable
+
+# .sort() — mutates scored, returns None
+scored.sort(key=lambda x: x[1], reverse=True)
+top = scored[:k]  # original list is now sorted
+
+# sorted() — leaves scored untouched, returns new list
+ranked = sorted(scored, key=lambda x: x[1], reverse=True)
+top = ranked[:k]
+sorted() is the Pythonic choice here because scored is a temporary list we don't need to preserve, but the real reason to prefer it is clarity — it makes the data flow explicit: scored goes in, ranked comes out, no side effects.
+
+The key=lambda x: x[1] tells Python to sort by the second element of each tuple — the score — and reverse=True puts the highest score first.
+
+
 ---
 
 ## Getting Started
