@@ -243,6 +243,7 @@ A few sentences about what you learned:
 - Where do you think human judgment still matters, even if the model seems "smart"
 
 ---
+```
 
 ## Demo
 
