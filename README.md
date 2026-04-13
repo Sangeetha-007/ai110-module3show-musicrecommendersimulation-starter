@@ -246,11 +246,11 @@ A few sentences about what you learned:
 
 ## Demo
 
-![User1](https://github.com/Sangeetha-007/ai110-module3show-musicrecommendersimulation-starter/blob/main/images/final%20amateur%20dancer.png)
+![User1](images/final%20amateur%20dancer.png)
 
-![User2](https://github.com/Sangeetha-007/ai110-module3show-musicrecommendersimulation-starter/blob/main/images/final%20chill%20listener.png)
+![User2](images/final%20chill%20listener.png)
 
-![User3](https://github.com/Sangeetha-007/ai110-module3show-musicrecommendersimulation-starter/blob/main/images/final%20late%20night.png)
+![User3](images/final%20late%20night.png)
 
-![User4](https://github.com/Sangeetha-007/ai110-module3show-musicrecommendersimulation-starter/blob/main/images/final%20workout%20fan.png)
+![User4](images/final%20workout%20fan.png)
 
