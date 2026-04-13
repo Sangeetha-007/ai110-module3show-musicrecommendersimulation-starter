@@ -29,6 +29,20 @@ Some prompts to answer:
 
 You can include a simple diagram or bullet list if helpful.
 
+The main features I plan on using for the music recommender system is genre, mood and energy. Secondary features which I may use are acousticness and valence. The `UserProfile` currently stores favorite_genre, favorite_mood, target_energy, and likes_acoustic. The formula to compute a score for each song is: score = 1 - |song_value - user_preference| .
+
+It chooses which songs to recommend after computing a score, it calculates ranking. Ranking takes the full list of songs and tells you which to play. An anology for this is scoring rule = the rubric and interviewer uses to evaluate one candidate. Ranking rule is when the hiring committee decides who gets an offer based on all the scores. 
+
+I am going to approach a numeric first approach for the weights. 
+Numeric-First (best for precision)
+  "weights": {
+      "energy":       0.30,
+      "acousticness": 0.25,
+      "tempo":        0.20,
+      "mood":         0.15,   # tiebreaker
+      "genre":        0.10,   # soft filter
+  }
+
 ---
 
 ## Getting Started
